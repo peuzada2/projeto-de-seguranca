@@ -161,7 +161,7 @@ header > h1 {
     background-image: url(imagens/automacao-residencial-com-camera-de-seguranca.jpg);
     background-size: cover;
     background-position: center;
-    width: 300px;
+    width: 25vw;
     height: 300px;
     border-radius: 10px;
 }
@@ -171,7 +171,7 @@ header > h1 {
     background-image: url(imagens/mulher-jovem-usando-tecnologia-domestica.jpg);
     background-size: cover;
     background-position: center;
-    width: 300px;
+    width: 25vw;
     height: 300px;
     border-radius: 10px;
 
@@ -184,7 +184,7 @@ header > h1 {
     background-image: url(imagens/courier-fazendo-trabalhos-de-logistica.jpg);
     background-size: cover;
     background-position: center;
-    width: 300px;
+    width: 25vw;
     height: 300px;
     border-radius: 10px;
 }
@@ -221,8 +221,6 @@ header > h1 {
 
 .button:hover {
     color: grey;
-
-
 }
 
 .card1 {
@@ -254,13 +252,48 @@ header > h1 {
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    background-color: rgb(255, 255, 92);
 }
 
 .textocl1 {
     color: white;
     text-align: center;
-    font-family: 'Oswald' sans-serif;
+    padding-top: 50px;
 }
+
+.titulocl {
+    padding: 20px;
+}
+
+.titulocl1, .titulocl2 {
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.mulherapontando {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-image: url(imagens/muie.png);
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: drop-shadow(5px 5px 10px rgba(20, 20, 20, 0.63));
+}
+
+@media only screen and (max-width: 603px){
+    .mulherapontando {
+        display: none;
+    }
+}
+
+.imagemclientes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
 
 @media only screen and (min-width: 100px) and (max-width: 1110px){
 
@@ -286,5 +319,10 @@ header > h1 {
 
     .nav-item, .nav-item4 {
         font-size: 1.4em;
+    }
+
+    .card1, .card2, .card3 {
+        margin-top: 20px;
+        margin: 20px 0px 0px 0px;
     }
 }
