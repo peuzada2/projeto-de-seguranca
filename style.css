@@ -43,6 +43,24 @@ ul {
     justify-content: space-around;
 }
 
+li {
+    list-style: none;
+}
+
+i {
+    display: flex;
+    list-style: none;
+    justify-self: flex-end;
+    font-size: 1.5em;
+}
+
+.segurando_botao {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+}
+
 .nav-item, .nav-item4 {
     overflow: hidden;
     padding-right: 1.7em;
@@ -88,6 +106,10 @@ header > h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     color: rgb(17, 17, 17);
+}
+
+.dropdown_menu {
+    display: none;
 }
 
 .span1 {
@@ -211,12 +233,13 @@ header > h1 {
     border: none;
     padding-bottom: 5px;
     border-bottom: 1px solid rgb(255, 255, 92);
-    margin-top: 10px;
+    margin-top: 15px;
     text-transform: uppercase;
     cursor: pointer;
     background: none;
     color: white;
     transition: .3s;
+    font-size: 20px;
 }
 
 .button:hover {
@@ -295,7 +318,6 @@ header > h1 {
 }
 
 
-
 @media only screen and (min-width: 100px) and (max-width: 1110px){
 
     .imagensserviço {
@@ -307,19 +329,66 @@ header > h1 {
     }
 
     .card1, .card2, .card3 {
-        width: 90%;
+    width: 90%;
     margin-top: 30px;
     }
 }
 
 @media only screen and (min-width: 100px) and (max-width: 609px) {
 
-    header { 
+    header {
+        justify-content: flex-start;
+    }
+    
+    .segurando_botao {
+        margin-right: 20px;
+    }
+    
+    .dropdown_menu {
         display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        height: 0;
+        width: 300px;
+        background-color: rgb(58, 58, 58);
+        padding: 1em;
+        margin-right: 20px;   
+        border-radius: 20px;
+        color: rgb(255, 255, 92);
+        overflow: hidden;
+        -webkit-filter: blur(.6);
+        transition: height .3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    }
+    
+    .dropdown_menu.open {
+        display: flex;
+        height: 240px;
+    }
+    
+    .dropdown_menu > li {
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+    
+    .dropdown_menu > .nav-item4 {
+        margin: 0px;
+    }
+    
+
+    nav > ul{
+        display: none;
+    }
+
+    .segurando_botao {
+        display: block;
     }
 
     .nav-item, .nav-item4 {
         font-size: 1.4em;
+        border: none;
     }
 
     .card1, .card2, .card3 {
