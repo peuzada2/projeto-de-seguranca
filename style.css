@@ -112,6 +112,16 @@ header > h1 {
     display: none;
 }
 
+/* SOBRE NOS */
+
+#sobrenos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 2%;
+}
+
 .span1 {
     font-size: 1.7em;
     width: 500px;
@@ -127,16 +137,6 @@ header > h1 {
     padding-bottom: 5px;
 }
 
-
-#sobrenos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 2%;
-}
-
-
 .imagemcamera {
     display: flex;
     height: 550px;
@@ -150,6 +150,7 @@ header > h1 {
     background-image: url(imagens/retrato-do-guarda-de-seguranca-masculino-com-estacao-de-radio-e-telas-de-camera.jpg);
 }
 
+
 #servicos > h1 {
     font-family: 'Oswald', 'sans-serif';
     font-size: 3em;
@@ -159,6 +160,7 @@ header > h1 {
     text-align: center;
     margin: 20px;
 }
+/* SERVIÇOS */
 
 #servicos {
     display: flex;
@@ -183,6 +185,7 @@ header > h1 {
     background-image: url(imagens/automacao-residencial-com-camera-de-seguranca.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     width: 25vw;
     height: 300px;
     border-radius: 10px;
@@ -193,6 +196,7 @@ header > h1 {
     background-image: url(imagens/mulher-jovem-usando-tecnologia-domestica.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     width: 25vw;
     height: 300px;
     border-radius: 10px;
@@ -205,6 +209,7 @@ header > h1 {
     justify-content: center;
     background-image: url(imagens/courier-fazendo-trabalhos-de-logistica.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     width: 25vw;
     height: 300px;
@@ -269,6 +274,8 @@ header > h1 {
     flex-direction: column;
 }
 
+/* CLIENTES */
+
 #clientes {
     display: flex;
     flex-direction: column;
@@ -302,6 +309,105 @@ header > h1 {
     background-size: cover;
     background-position: center;
     -webkit-filter: drop-shadow(5px 5px 10px rgba(20, 20, 20, 0.63));
+}
+
+/* FOOTER */
+
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contatotitulo > h1, h2 {
+    font-family: 'Oswald';
+    text-align: center;
+    font-size: 3em;
+    color: white;
+
+}
+
+.contatotitulo > h2 > strong {
+    font-family: 'Oswald';
+    color: rgb(255, 240, 102);
+}
+
+.instagram, .whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald';
+    font-size: 1.8em;
+    width: 300px;
+    height: 50px;
+}
+
+.instagram {
+    background-color: rgb(226, 43, 128);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0px 20px 0px;
+    transition: all .3s ease-in-out;
+}
+
+.instagram:hover {
+    transform: scale(1.06);
+}
+
+.whatsapp {
+    background-color: rgb(75, 255, 144);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 40px 0px 0px 0px;
+    transition: all .3s ease-in-out;
+}
+
+.whatsapp:hover {
+    transform: scale(1.06);
+}
+
+.logoinsta {
+    background-image: url(imagens/instagram-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+}
+
+
+.logozap {
+    width: 30px;
+    height: 30px;
+}
+
+.logozap {
+    background-image: url(imagens/whatsapp-logo-png-.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 33px;
+}
+
+/*direitos do site*/
+
+#direitosdosite {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(173, 86, 255);
+    color: white;
+
+}
+
+#direitosdosite > a {
+    color: rgb(250, 223, 70);
+    padding-left: 5px;
 }
 
 @media only screen and (max-width: 603px){
@@ -394,5 +500,14 @@ header > h1 {
     .card1, .card2, .card3 {
         margin-top: 20px;
         margin: 20px 0px 0px 0px;
+    }
+
+    .imagemclientes {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .instagram, .whatsapp{
+        width: 90%;
     }
 }
