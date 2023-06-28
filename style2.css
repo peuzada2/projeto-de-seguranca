@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    font-size: 1.6em;
+    margin-top: 10px;
+    font-family: 'Oswald';
+}
+
+.beneficios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+}
+
+.cardbeneficios {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.beneficios > h1 {
+    font-size: 2em;
+    color: white;
+    font-family: 'oswald';
+    margin-top: 50px;
+}
+
+.itemscheck {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.imagemdemonstrativo {
+    display: flex;
+    width: 300px;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    align-self: flex-end;
+    background-image: url(imagens/pngwing.com.png);
+}
+
+.check {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-image: url(imagens/done_all_FILL0_wght400_GRAD0_opsz48.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+html {
+    background-color: rgb(44, 44, 44);
+}
+
+.setaback {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-image: url(imagens/seta-direita.png);
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    rotate: 180deg;
+}
+
+.conteudoprincipal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.conteudoprincipal > h1 {
+    font-family: 'Oswald';
+    color: white;  
+}
+
+.conteudoprincipal > p {
+    width: 80%;
+    font-size: 1.5em;
+    color: white;
+    padding-top: 30px;
+}
+
+.imagemprincipal {
+    background-image: url(imagens/close-up-mulher-verificando-camera-de-seguranca.jpg);
+    width: 80%;
+    height: 500px;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 750px)
+
+
+

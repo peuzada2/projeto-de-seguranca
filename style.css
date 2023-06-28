@@ -36,6 +36,13 @@ header {
     background-color: rgba(44, 44, 44, 0.281);
 }
 
+a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+}
+
 nav {
     display: flex;
 }
@@ -469,7 +476,7 @@ header > h1 {
         color: rgb(255, 255, 92);
         overflow: hidden;
         z-index: 100;
-        transition: all 7s cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-in-out;
+        transition: all 7asdasds cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-in-out;
     }
     
     .dropdown_menu.open {
