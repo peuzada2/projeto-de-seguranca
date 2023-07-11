@@ -15,7 +15,6 @@
 }
 
 html {
-    height: 100%;
     width: 100%;
     background-color:rgb(44, 44, 44);
 }
@@ -144,7 +143,10 @@ header > h1 {
 .span1 > h1 {
     font-size: 2em;
     font-family: 'Oswald', sans-serif;
-    padding-bottom: 5px;
+    padding: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(255, 240, 102);
+    width: 250px;
 }
 
 .imagemcamera {
@@ -526,5 +528,9 @@ header > h1 {
 
     .instagram, .whatsapp{
         width: 90%;
+    }
+
+    .titulocl1, .titulocl2 {
+        font-size: 1.7em;
     }
 }

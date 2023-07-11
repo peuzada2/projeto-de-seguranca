@@ -13,6 +13,10 @@
     margin: 0px;
 }
 
+html {
+    background-color: rgb(44, 44, 44);
+}
+
 li {
     list-style: none;
     display: flex;
@@ -37,7 +41,8 @@ li:hover {
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-    height: 400px;
+    height: 500px;
+    margin-top: 50px;
 }
 
 .cardbeneficios {
@@ -45,6 +50,7 @@ li:hover {
     width: 50%;
     height: 100%;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     border: 2px solid grey;
     border-radius: 10px;
@@ -57,18 +63,17 @@ li:hover {
     transform: scale(1.01);
 }
 
-.beneficios > h1 {
+.cardbeneficios > h1 {
     font-size: 2.5em;
     color: white;
     font-family: 'oswald';
-    margin-top: 50px;
 }
 
 .itemscheck {
     display: flex;
     width: 50%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -90,10 +95,6 @@ li:hover {
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 5px;
-}
-
-html {
-    background-color: rgb(44, 44, 44);
 }
 
 .setaback {
@@ -138,18 +139,76 @@ html {
     width: 80%;
     height: 500px;
     background-size: cover;
+    background-position: center;
     margin-top: 50px;
+}
+
+.buttonorcamento {
+    display: flex;
+    padding: 10px;
+    list-style: none;
+    outline: none;
+    background-color: rgb(255, 240, 102);
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    transition: .3s;
+}
+
+.buttonorcamento:hover {
+    transform: scale(1.05);
+    background-color: rgba(29, 29, 29, 0.856);
+}
+
+.buttonorcamento:hover > a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    font-weight: bold;
+    font-family: 'Oswald';
+    font-size: 1.5em;
+    transition: .3s;
+}
+
+.videosets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+video {
+    width: 80%;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 750px){
     .cardbeneficios{
         width: 80%;
-        heig
+        margin-top: 50px;
+    }
+
+    .beneficios {
+        margin-top: 0px;
     }
 
     li {
         font-size: 1.1em;
         text-align: center;
+    }
+
+    .videosets {
+        width: 100%;
+    }
+
+    .videosets > video {
+        width: 90%;
     }
 }
 
