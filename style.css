@@ -16,7 +16,7 @@
 
 html {
     width: 100%;
-    background-color:rgb(22, 22, 22);
+    background-color: #1b1b1b;
 }
 
 header {
@@ -29,7 +29,7 @@ header {
     height: 70px;
     backdrop-filter: blur(8px);
     z-index: 100;
-    background-color: rgba(44, 44, 44, 0.281);
+    background-color: #1b1b1b;
 }
 
 a {
@@ -57,6 +57,10 @@ i {
     list-style: none;
     justify-self: flex-end;
     font-size: 1.5em;
+}
+
+p {
+    color: white;
 }
 
 .segurando_botao {
@@ -166,6 +170,20 @@ header > h1 {
     background-image: url(imagens/retrato-do-guarda-de-seguranca-masculino-com-estacao-de-radio-e-telas-de-camera.png);
 }
 
+.setabaixo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+
+.setabaixoimg {
+    width: 70px;
+    height: 70px;
+    bottom: 20px;
+    position: relative;
+}
 
 #servicos > h1 {
     font-family: 'Oswald', 'sans-serif';
@@ -183,9 +201,8 @@ header > h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 80px;
-
-
+    padding-top: 20px;
+    background-image: url();
 }
 
 .tipodeservicos {
@@ -259,7 +276,7 @@ header > h1 {
     background: none;
     color: rgb(24, 24, 24);
     transition: .3s;
-    font-size: 20px;
+    font-size: 1em;
     text-align: center;
     margin: 20px;
 }
@@ -346,86 +363,62 @@ header > h1 {
 
 /* FOOTER */
 
-#contato {
+.ctt {
     display: flex;
-    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-image: url(imagens/telefone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+.loc {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-image: url(imagens/localizacao.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.hr {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-image: url(imagens/rotacao-no-sentido-horario.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+#card1 {
+    border-right: #eeeeee 1px solid;
+}
+
+#card3 {
+    border-left: white 1px solid;
+}
+
+.cardft, .cardft2 {
+    display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-.contatotitulo > h1, h2 {
-    font-family: 'Oswald';
-    text-align: center;
-    font-size: 3em;
-    color: white;
-
-}
-
-.contatotitulo > h2 > strong {
-    font-family: 'Oswald';
-    color: rgb(255, 240, 102);
-}
-
-.instagram, .whatsapp {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    font-family: 'Oswald';
-    font-size: 1.8em;
-    width: 300px;
-    height: 50px;
+    text-align: center;
+    width: 30%;
 }
 
-.instagram {
-    background-color: rgb(253, 98, 170);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 20px 0px 20px 0px;
-    transition: all .3s ease-in-out;
+.cardft > p {
+    font-size: 1.3em
 }
 
-.instagram:hover {
-    transform: scale(1.06);
-}
-
-.whatsapp {
-    background-color: rgb(75, 255, 144);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 40px 0px 0px 0px;
-    transition: all .3s ease-in-out;
-}
-
-.whatsapp:hover {
-    transform: scale(1.06);
-}
-
-.logoinsta {
-    background-image: url(imagens/instagram-logo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 26px;
-    height: 26px;
-}
-
-
-.logozap {
-    width: 30px;
-    height: 30px;
-}
-
-.logozap {
-    background-image: url(imagens/whatsapp-logo-png-.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 33px;
-    height: 33px;
+.cardft2 > p {
+    font-size: 1.3em;
 }
 
 /*direitos do site*/
@@ -441,6 +434,22 @@ header > h1 {
 #direitosdosite > a {
     color: rgb(250, 223, 70);
     padding-left: 5px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+}
+
+.footercards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 100px 0;
 }
 
 @media only screen and (max-width: 1180px) and (min-width: 609px){
@@ -476,6 +485,45 @@ header > h1 {
     .card1, .card2, .card3 {
     width: 90%;
     margin-top: 30px;
+    }
+
+    .footercards {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    .cardft2{
+        border-right: none;
+        border-left: none;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .cardft {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .cardft, .cardft2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 60%;
+    }
+
+    #card1 {
+        border-bottom: #eeeeee 1px solid;
+        border-right: none;
+    }
+    
+    #card3 {
+        border-top: white 1px solid;
+        border-left: none;
     }
 }
 
@@ -581,6 +629,44 @@ header > h1 {
         margin: 0;
         width: 100%;
         height: 350px;
+    }
+
+    .footercards {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    .cardft2{
+        border-right: none;
+        border-left: none;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .cardft {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .cardft, .cardft2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 60%;
+    }
+
+    #card1 {
+        border-bottom: #eeeeee 1px solid;
+    }
+    
+    #card3 {
+        border-top: white 1px solid;
+    
     }
 }
 
