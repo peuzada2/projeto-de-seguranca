@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
     <link rel="stylesheet" href="script.js">
-    
-    <title>Document</title>
+    <title>Projeto de Segurança</title>
 </head>
 <body>
     <header>
@@ -18,7 +20,7 @@
                     <li class="nav-item"><a href="#sobrenos">Sobre Nós</a></li>
                     <li class="nav-item"><a href="#servicos">Serviços</a></li>
                     <li class="nav-item"><a href="#clientes">Clientes</a></li>
-                    <li class="nav-item4"><a href="#contato">Contato</a></li>
+                    <li class="nav-item4"><a href="#footer">Contato</a></li>
                 </ul>
                 <div class="segurando_botao"><i  class="fa-solid fa-bars"></i></div>
         </nav>
@@ -26,40 +28,40 @@
                     <li class="nav-item"><a href="#sobrenos">Sobre Nós</a></li>
                     <li class="nav-item"><a href="#servicos">serviços</a></li>
                     <li class="nav-item"><a href="#clientes">Clientes</a></li>
-                    <li class="nav-item4"><a href="#contato">Contato</a></li>
+                    <li class="nav-item4"><a href="#footer">Contato</a></li>
             </div>
     </header>
 
 
     <section id="sobrenos">
 
-        <span class="span1">
+        <span class="span1" id="span1">
             <h1> SOBRE NÓS</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae exercitationem fugiat, dolores placeat soluta dicta temporibus voluptatem mollitia hic officiis laboriosam aliquid rerum quia magni dolorem necessitatibus libero ab nam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore exercitationem facere debitis neque quas dolorem magni sit facilis rerum rem alias suscipit accusantium, nostrum nisi mollitia amet! Totam, cumque?</p>
         </span>
 
-        <picture class="imagemcamera">
+        <picture class="imagemcamera" id="imgcamera">
         </picture>
     </section>
-    <div class="setabaixo"><img src="imagens/seta-para-baixo-em-um-circulo.png" alt="" class="setabaixoimg"></div>
+    <div class="setabaixo"><a href="#servicos"><img src="imagens/seta-para-baixo-em-um-circulo.png" alt="" class="setabaixoimg"></a></div>
 
 
     <section id="servicos">
-            <h1>TIPOS DE SERVIÇOS</h1>
+            <h1>NOSSOS SERVIÇOS</h1>
         <div class="tipodeservicos">
         </div>
         <div class="imagensserviço">
-            <div class="card1">
+            <div class="card1" id="card1">
                 <picture class="img1"></picture>
-                <button class="button"><a href="index2.html">INSTALAÇÃO DE CÂMERAS</a></button>
+                <button class="button"><a href="index2.html"><i class="fa-solid fa-link fa-2xs" style="color: #ffffff; padding-right: 10px;"></i>INSTALAÇÃO DE CÂMERAS</a></button>
             </div>
             <div class="card2">
                 <picture class="img2"></picture>
-                <button class="button"><a href="">INSTALAÇÃO DE ALARMES</a></button>
+                <button class="button"><a href=""><i class="fa-solid fa-link fa-2xs" style="color: #ffffff; padding-right: 10px;"></i>INSTALAÇÃO DE ALARMES</a></button>
             </div>
             <div class="card3">
                 <picture class="img3"></picture>
-                <button class="button"><a href="">INSTALAÇÃO DE RASTREADORES</a></button>
+                <button class="button"><a href=""><i class="fa-solid fa-link fa-2xs" style="color: #ffffff; padding-right: 10px;"></i>INSTALAÇÃO DE RASTREADORES</a></button>
             </div>
         </div>
     </section>
@@ -69,20 +71,7 @@
         <span class="textocl1">
             <h1 class="titulocl1">SEJA UM DOS NOSSOS CLIENTES</h1>
             <h2 class="titulocl2">CONHEÇA ALGUM DELES</h2>
-        </span>
-        <div class="imagemclientes">
-           <div class="grupo1">
-               <h1 class="titulocl">cliente 1</h1>
-               <h1 class="titulocl">cliente 2</h1>
-               <h1 class="titulocl">cliente 3</h1>
-           </div>
-           <div class="grupo2">
-               <h1 class="titulocl">cliente 4</h1>
-               <h1 class="titulocl">cliente 5</h1>
-               <h1 class="titulocl">cliente 6</h1>
-           </div>
-           <picture class="mulherapontando"></picture>
-        </div>
+
     </section>
 
     <footer id="footer">

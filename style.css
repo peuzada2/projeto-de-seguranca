@@ -7,6 +7,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 
+[data-bs-theme=dark] {
+    color-scheme: dark;
+    --bs-body-color: #dee2e6;
+    --bs-body-color-rgb: 222, 226, 230;
+    --bs-body-bg: #212529;
+    --bs-body-bg-rgb: 33, 37, 41;
+    --bs-emphasis-color: #fff;
+    --bs-emphasis-color-rgb: 255, 255, 255;
+    --bs-secondary-color: rgba(222, 226, 230, 0.75);
+    --bs-secondary-color-rgb: 222, 226, 230;
+    --bs-secondary-bg: #343a40;
+    --bs-secondary-bg-rgb: 52, 58, 64;
+    --bs-tertiary-color: rgba(222, 226, 230, 0.5);
+    --bs-tertiary-color-rgb: 222, 226, 230;
+    --bs-tertiary-bg: #2b3035;
+    --bs-tertiary-bg-rgb: 43, 48, 53;
+    --bs-primary-text-emphasis: #6ea8fe;
+    --bs-secondary-text-emphasis: #a7acb1;
+    --bs-success-text-emphasis: #75b798;
+    --bs-info-text-emphasis: #6edff6;
+    --bs-warning-text-emphasis: #ffda6a;
+    --bs-danger-text-emphasis: #ea868f;
+    --bs-light-text-emphasis: #f8f9fa;
+    --bs-dark-text-emphasis: #dee2e6;
+    --bs-primary-bg-subtle: #031633;
+    --bs-secondary-bg-subtle: #161719;
+    --bs-success-bg-subtle: #051b11;
+    --bs-info-bg-subtle: #032830;
+    --bs-warning-bg-subtle: #332701;
+    --bs-danger-bg-subtle: #2c0b0e;
+    --bs-light-bg-subtle: #343a40;
+    --bs-dark-bg-subtle: #1a1d20;
+    --bs-primary-border-subtle: #084298;
+    --bs-secondary-border-subtle: #41464b;
+    --bs-success-border-subtle: #0f5132;
+    --bs-info-border-subtle: #087990;
+    --bs-warning-border-subtle: #997404;
+    --bs-danger-border-subtle: #842029;
+    --bs-light-border-subtle: #495057;
+    --bs-dark-border-subtle: #343a40;
+    --bs-heading-color: inherit;
+    --bs-link-color: #6ea8fe;
+    --bs-link-hover-color: #8bb9fe;
+    --bs-link-color-rgb: 110, 168, 254;
+    --bs-link-hover-color-rgb: 139, 185, 254;
+    --bs-code-color: #e685b5;
+    --bs-border-color: #495057;
+    --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
+    --bs-form-valid-color: #75b798;
+    --bs-form-valid-border-color: #75b798;
+    --bs-form-invalid-color: #ea868f;
+    --bs-form-invalid-border-color: #ea868f;
+  }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -14,9 +69,14 @@
     scroll-behavior: smooth;
 }
 
+body {
+    --bs-body-bg: #1b1b1b;
+}
+
 html {
     width: 100%;
     background-color: #1b1b1b;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 header {
@@ -29,7 +89,7 @@ header {
     height: 70px;
     backdrop-filter: blur(8px);
     z-index: 100;
-    background-color: #1b1b1b;
+    background-color: #1b1b1b4d;
 }
 
 a {
@@ -37,6 +97,15 @@ a {
     text-decoration: none;
     color: white;
     font-weight: 550;
+}
+
+#img1 {
+    background-image: url(imagens/cliente.png);
+    width: 550px;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+
 }
 
 nav {
@@ -100,7 +169,7 @@ p {
 }
 
 .nav-item4 > a:hover {
-    color: rgb(255, 240, 102);
+    color: #fff066;
     transition: .2s;
 }
 
@@ -146,6 +215,19 @@ header > h1 {
     display: flex;
     flex-wrap: wrap;
     color: white;
+    animation-name: span;
+    animation-duration: 2s;
+}
+
+@keyframes span {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .span1 > h1 {
@@ -159,15 +241,25 @@ header > h1 {
 
 .imagemcamera {
     display: flex;
-    height: 600px;
+    height: 630px;
     width: 50%;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
     border-radius: 10px;
     background-position: center;
     background-size: cover;
     background-image: url(imagens/retrato-do-guarda-de-seguranca-masculino-com-estacao-de-radio-e-telas-de-camera.png);
+    animation-name: imgb;
+    animation-duration: 2s;
+}
+
+@keyframes imgb {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .setabaixo {
@@ -202,7 +294,7 @@ header > h1 {
     justify-content: center;
     flex-direction: column;
     padding-top: 20px;
-    background-image: url();
+    background-color: #1b1b1b;
 }
 
 .tipodeservicos {
@@ -285,10 +377,11 @@ header > h1 {
     color: white;
     font-weight: bolder;
     text-align: center;
+    transition: all .3s ease-in-out;
 }
 
-.button:hover {
-    color: grey;
+.button:hover > a {
+    color: rgb(128, 128, 128);
 }
 
 .card1 {
@@ -301,6 +394,19 @@ header > h1 {
     border-bottom: 10px solid rgb(255, 255, 92);
     border-radius: 10px;
     text-align: center;
+    animation-name: cards;
+    animation-duration: 1s;
+}
+
+@keyframes cards {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .card2 {
@@ -312,6 +418,19 @@ header > h1 {
     background-color: rgb(0, 0, 0);
     border-bottom: 10px solid rgb(255, 255, 92);
     border-radius: 10px;
+    animation-name: card2;
+    animation-duration: 1.6s;
+}
+
+@keyframes card2 {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .card3 {
@@ -322,7 +441,21 @@ header > h1 {
     background-color: rgb(0, 0, 0);
     border-bottom: 10px solid rgb(255, 255, 92);
     border-radius: 10px;
+    animation-name: card3;
+    animation-duration: 2s;
 }
+
+@keyframes card3 {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 /* CLIENTES */
 
@@ -359,6 +492,23 @@ header > h1 {
     background-size: cover;
     background-position: center;
     -webkit-filter: drop-shadow(5px 5px 10px rgba(20, 20, 20, 0.63));
+}
+
+.carousel-item {
+    position: relative;
+    height: 32rem;
+    position: relative;
+
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
 }
 
 /* FOOTER */

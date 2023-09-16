@@ -10,9 +10,3 @@ segurandobotao.onclick = function () {
     ? 'fa-solid fa-xmark'
     : 'fa-solid fa-bars'
 }
-
-src="https://unpkg.com/scrollreveal"
-
-ScrollReveal().reveal('#sobrenos')
-ScrollReveal().reveal('#servicos', {delay: 500})
-ScrollReveal({ reset: true });
